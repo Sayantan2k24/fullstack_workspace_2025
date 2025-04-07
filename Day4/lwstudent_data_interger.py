@@ -7,7 +7,7 @@ def lwinfo():
 
 # @app.route("/data")
 # def lwdata():
-#     return 10
+#     return 10 # this will give Internal Server Error
 
 @app.route("/data")
 def lwdata():
