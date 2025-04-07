@@ -1,0 +1,20 @@
+                1: {
+                        "id": 1,
+                        "name": "sayantan",
+                        "mob": 9829111123,
+                        "courses": ["QC", "AI"]
+                },
+
+                2: { 
+                        "id": 2,
+                        "name": "eric",
+                        "mob": 9829122222,
+                        "courses": ["AI"]
+                },
+
+                3:  {
+                        "id": 3,
+                        "name": "tom",
+                        "mob": 9829133333,
+                        "courses": ["Full Stack"]
+                } 
