@@ -1,0 +1,49 @@
+Welcome to Student DB
+<br/> <br />
+
+{#
+DB is <br />#}
+<!--- This is html Comment-->
+{# This is jinja comment #}
+{# {{ db[2] }} one more example {{ db.2 }} 
+my db my keys {{ db.keys() }} and my values {{ db.values() }}
+#}
+
+record starts from here <br /><br />
+
+<table border="5" width="80%", align="center"> 
+<tr>
+    <th>Record ID</th>
+    <th>Student Info</th>
+    <th>Student Mobile</th>
+    <th>Student Courses</th>
+    <th>Star Student</th>
+</tr>
+{% for id, record  in db.items() %}
+
+    <tr>
+        <td> record {{ id }} </td>
+        <td> {{ record.name }} </td>
+        <td> {{ record.mob }} </td>
+        <td>
+            <ul>
+            {% for i in record.courses %}
+                <li>{{ i }}</li>
+            {% endfor %}
+            </ul>    
+        </td>
+        <td>    
+            {% if record.courses|length  >=3 %} 
+                Star Student &#128509;
+            {% else %}
+                Will Be Star &#128515;
+            {% endif %}
+        </td>
+    </tr>
+
+{% endfor %}
+</table>
+
+<br /><br />
+End of Page
+<br/>
