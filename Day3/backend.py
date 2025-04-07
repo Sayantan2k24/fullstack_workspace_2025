@@ -7,5 +7,5 @@ def mysearch():
 
 @app.route("/mail")
 def myemail():
-    sreturn "<b> i do email...</b><br /> hi hello <br /> User <input />
+    return "<b> i do email...</b><br /> hi hello <br /> User <input />"
 app.run()
